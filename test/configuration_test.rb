@@ -1,6 +1,6 @@
 require File.expand_path('../test_helper', __FILE__)
 
-module Udp2sqsServer
+module Pergo
   class ConfigurationTest < Minitest::Test
     def config
       @config ||= Configuration.send(:new)

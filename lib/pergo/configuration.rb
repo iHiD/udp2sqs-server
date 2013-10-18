@@ -1,6 +1,6 @@
 require 'singleton'
 
-module Udp2sqsServer
+module Pergo
 
   class ConfigurationError < Exception
   end

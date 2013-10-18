@@ -10,22 +10,22 @@ require "mocha/setup"
 lib = File.expand_path('../../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
-require "udp2sqs_server"
+require "pergo"
 
 #Fog.mock!
 
 class Minitest::Test
   def setup
-    Udp2sqsServer::Configuration.instance.access_key = "test-access-key"
-    Udp2sqsServer::Configuration.instance.secret_key = "test-secret-key"
-    Udp2sqsServer::Configuration.instance.topic = "test-topic"
-    Udp2sqsServer::Configuration.instance.queue_region = "test-queue-region"
-    Udp2sqsServer::Configuration.instance.host = "http://udp.example.com"
-    Udp2sqsServer::Configuration.instance.port = 1234
+    Pergo::Configuration.instance.access_key = "test-access-key"
+    Pergo::Configuration.instance.secret_key = "test-secret-key"
+    Pergo::Configuration.instance.topic = "test-topic"
+    Pergo::Configuration.instance.queue_region = "test-queue-region"
+    Pergo::Configuration.instance.host = "http://udp.example.com"
+    Pergo::Configuration.instance.port = 1234
   end
 
   def config
-    Udp2sqsServer::Configuration.instance
+    Pergo::Configuration.instance
   end
 end
 

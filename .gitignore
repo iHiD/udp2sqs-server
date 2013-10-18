@@ -1,4 +1,5 @@
 *.swp
+*.swn
 *.gem
 *.rbc
 .bundle

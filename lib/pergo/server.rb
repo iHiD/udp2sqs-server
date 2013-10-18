@@ -1,6 +1,6 @@
 require 'propono'
 
-module Udp2sqsServer
+module Pergo
   class Server
 
     def self.run(*args)

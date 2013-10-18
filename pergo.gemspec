@@ -1,15 +1,15 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'udp2sqs_server/version'
+require 'pergo/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "udp2sqs_server"
-  spec.version       = Udp2sqsServer::VERSION
+  spec.name          = "pergo"
+  spec.version       = Pergo::VERSION
   spec.authors       = ["MalcyL, mmmmmrob", "iHiD"]
   spec.email         = ["malcolm@landonsonline.me.uk, rob@dynamicorange.com", "jeremy@meducation.net"]
-  spec.description   = %q{Simple UDP server. Posts UDP payloads to a configured AWS SQS queue.}
-  spec.summary       = %q{See also udp2sqs-client}
+  spec.description   = %q{A simple wrapper of Propono.}
+  spec.summary       = %q{See also Propono, a pub/sub build on AWS.}
   spec.homepage      = ""
   spec.license       = "AGPL3"
 
